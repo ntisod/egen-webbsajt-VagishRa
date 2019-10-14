@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="se" dir="ltr">
+<html lang="se" dir="ltr"> <!--TL: Intressant med dir-attributet. Det har jag inte sett tidigare. Skriver man från höger till vänster i/på Sri Lanka? -->
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header> <!--TL: Bra att du använder header. Undvik däremot div.-->
       <div class="logo">                                                             <!-- här finns alla bilder som man ser på vänster av sidan-->
         <img src="Bilder/laddaned.jpg" alt="Bild på NTI Loga">
       </div>
@@ -17,7 +17,7 @@
         <img src="Bilder/jag.jpg" alt="Bild på Vagish">
       </div>
       <div class="future">
-        <img src="Bilder/future.gif" alt="Future GIF">
+        <img src="Bilder/future.gif" alt="Future GIF"><!--TL: Bra om du håller dig till samma språk i alternativtexterna. Ordet GIF bör nog också undvikas. -->
       </div>
       <div class="video">
         <video width="320" height="240" controls>
@@ -32,7 +32,7 @@
 
       <div class="navbarbakgrund">                                                  <!-- koden för själva navbar och bakgrunden-->
         <div class="navbar"
-          <ul>                                                                      <!-- en unordered list används för allt i navbaren -->
+          <ul>  <!--TL: Här har du tydligen ett fel. Fixa det! -->                                                                    <!-- en unordered list används för allt i navbaren -->
             <li class="active"><a href="#top">Hem</a></li>
             <li><a href="#BAKGRUND">Bakgrund</a></li>
             <li><a href="#FRAMTID">Tankar Om Framtiden</a></li>
@@ -42,13 +42,13 @@
         </div>
       </div>
   </header>
-
-
-<div class="container">
-  <p id="BAKGRUND"></p>                                                                        <!-- här börjar den första lådan(bakgrund)-->
+<!--TL: Jättebra att du använder elementet header. Använd gärna elementet nav istället för div ovan.
+  Här nedanför bör du i framtiden också använda andra element än div och span ifall det är möjligt. -->
+<div class="container"> <!--TL: Om du använder class bör du inte numrera dem. Vill du ha unika identifierare bör du istället använda id -->
+  <p id="BAKGRUND"></p> <!--TL: Här ska du inte använda p. --><!-- här börjar den första lådan(bakgrund)-->
   <h1>Om mig Vagish</h1>
   <h2>Bakgrund</h2>
-  <br>                                                                                                    <!--radbrytning efter h1-->
+  <br><!--TL: Här ska du däremot använda p istället för br och span. -->           <!--radbrytning efter h1-->
   <span class="bakgrundtext">Jag har haft en relativt vanlig bakgrund. Som du kanske redan såg
   på hemsidan, så heter jag <em>Vagish.</em> Jag är född i Sverige och mina föräldrar kommer från Sri Lanka.
   Jag älskar att spela volleyboll och programmering. Jag är alltid öppen till att träffa nya människor och lära mig
@@ -58,8 +58,8 @@
 
 
 <div class="container2">
-  <p id="FRAMTID"></p>                                                                           <!-- här börjar den andra lådan(framtid)-->
-  <h2>Tankar om framtiden</h2>
+  <p id="FRAMTID"></p> <!--TL: Denna p behövs inte. Lägg ditt id i diven ovanför, eller i rubriken. -->                                                                          <!-- här börjar den andra lådan(framtid)-->
+  <h2>Tankar om framtiden</h2> <!--TL: Här nedanför använder du p rätt. -->
   <p>Jag har väldigt svårt att bestämma mig mellan två grenar i framtiden, volleyboll eller DICE. Jag älskar att programmera,
   man blir riktigt glad när man ser att något man har gjort funkar. Men volleyboll är också en sjukt rolig sport! Just nu är jag nog bara för ung
   för att kunna bestämma mig för att ta det rätta valet. Vi får väll se vart jag hamnar om 10 år!</p>
@@ -68,10 +68,10 @@
 <div class="container3">
   <p id="VARFÖR"></p>
   <h2>Varför NTI?</h2>
-  <p> Jag valde NTI för att skolan gav mig en väldigt bra <b>första uttryck!</b>                 <!-- här används b taggen-->
+  <p> Jag valde NTI för att skolan gav mig en väldigt bra <b>första uttryck!</b> <!-- här används b taggen--><!--TL: Använd strong istället och byt ut "uttryck" mot "intryck". -->
       Antalet elever som gick på skolan var också ett betydelsevärd faktor.
       Dessutom låg skolan över Willys, och ni vet redan vad willys betyder!
-      Till vänster har ni en kort video på ett av Sveriges NTI skolor.</p>
+      Till vänster har ni en kort video på ett av Sveriges NTI skolor<!--TL: byt ut "skolor" mot "gymnasier"-->.</p>
 </div>
 
 <div class="container4">
@@ -80,7 +80,7 @@
 </div>
 
 
-
+<!--TL: Använd list-element istället för divar. -->
 <div class="spel1">                                                                            <!-- här börjar de 5 lådorna med mina favoritspel-->
   <img src="Bilder/bf1.jpg" alt="Bild på Battlefield 1">
   <a href="https://www.battlefield.com/games/battlefield-1" target="_blank">Battlefield 1 hemsida</a>
