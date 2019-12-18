@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: 'gang_of_threeregular';
+    src: url('../fontfile/go3v2-webfont.woff2') format('woff2'),
+    url('../fontfile/go3v2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +15,8 @@
 }
 body{
   display: grid;
+  font-size: 100%;
+
 }
 
 header{
@@ -27,7 +39,7 @@ header{
     background-image: url("../Bilder/citythree.jpg");
   }
   50%{
-    ba ckground-image: url("../Bilder/cityfour.jpg");
+    background-image: url("../Bilder/cityfour.jpg");
   }
   75%{
     background-image: url("../Bilder/cityone.jpg");
@@ -49,6 +61,7 @@ header{
 
 .navbar li a{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
+  font-family: 'gang_of_threeregular', sans-serif;
   font-size: 35px;
   text-decoration: none;
   color: #fff;
@@ -120,6 +133,7 @@ header{
 .container{                                                                       /* Den första lådan (bakgrund) */
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
+  opacity: 1;
   background-color: #500e82;
   margin-left: 450px;
   margin-right: 200px;
@@ -127,19 +141,23 @@ header{
   width: 1280px;
   height: 350px;
   padding-left: 35px;
-  padding-top: 50px
+  padding-top: 50px;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
 
 
 .container h1{
   font-size: 50px;
   color: #fff;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
+
 
 .container h2{
   font-size: 40px;
   color: #fff;
   padding-top: 10px;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
 
 .bakgrundtext{
@@ -147,7 +165,9 @@ header{
   font-size: 30px;
 }
 
-.container2{                                                                      /*andra lådan (Framtiden)*/
+
+
+.containertwo{                                                                      /*andra lådan (Framtiden)*/
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -157,22 +177,24 @@ header{
   width: 1280px;
   height: 300px;
   padding-left: 35px;
-  padding-top: 50px
+  padding-top: 50px;
+
 }
 
-.container2 h2{
+.containertwo h2{
   font-size: 40px;
   color: #fff;
   padding-top: 10px;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
 
-.container2 p{
+.containertwo p{
   color: #fff;
   font-size: 30px;
   padding-top: 20px;
 }
 
-.container3{                                                                      /*tredje lådan (Varför NTI?)*/
+.containerthree{                                                                      /*tredje lådan (Varför NTI?)*/
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -185,19 +207,20 @@ header{
   padding-top: 50px
 }
 
-.container3 h2{
+.containerthree h2{
   font-size: 40px;
   color: #fff;
   padding-top: 10px;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
 
-.container3 p{
+.containerthree p{
   color: #fff;
   font-size: 30px;
   padding-top: 20px;
 }
 
-.container4{                                                                      /*tredje lådan (5 spel)*/
+.containerfour{                                                                      /*tredje lådan (5 spel)*/
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -210,13 +233,14 @@ header{
   padding-top: 10px
 }
 
-.container4 h2{
+.containerfour h2{
   font-size: 40px;
   color: #fff;
   padding-top: 10px;
+  font-family: 'gang_of_threeregular', sans-serif;
 }
 
-.spel1{
+.spel{
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -228,13 +252,13 @@ header{
   padding-left: 20px;
   padding-top: 20px
 }
-.spel1 img{
+.spel img{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   height: 220px;
   width: 280px;
 }
 
-.spel2{
+.speltwo{
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -246,14 +270,13 @@ header{
   padding-left: 20px;
   padding-top: 20px
 }
-.spel2 img{
+.speltwo img{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   height: 220px;
   width: 280px;
 }
 
-
-.spel3{
+.spelthree{
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -265,13 +288,13 @@ header{
   padding-left: 20px;
   padding-top: 20px
 }
-.spel3 img{
+.spelthree img{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   height: 200px;
   width: 280px;
 }
 
-.spel4{
+.spelfour{
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -283,13 +306,13 @@ header{
   padding-left: 20px;
   padding-top: 20px
 }
-.spel4 img{
+.spelfour img{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   height: 220px;
   width: 280px;
 }
 
-.spel5{
+.spelfive{
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   background-color: #500e82;
@@ -301,13 +324,13 @@ header{
   padding-left: 20px;
   padding-top: 20px
 }
-.spel5 img{
+.spelfive img{
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
   height: 200px;
   width: 280px;
 }
 
-.spel1 a, .spel2 a, .spel3 a, .spel4 a, .spel5 a{
+.spel a, .speltwo a, .spelthree a, .spelfour a, .spelfive a{
   font-size: 30px;
   color: #fff;
   padding-top: 10px;
