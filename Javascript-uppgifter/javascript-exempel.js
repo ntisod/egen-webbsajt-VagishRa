@@ -15,11 +15,11 @@ function changeImage() {                                                      //
 
        var image = document.getElementById('bilden');
 
-       if (image.src.match("../Bilder/bild1.jpg")) {
-           image.src = "../Bilder/bild2.jpg";
+       if (image.src.match("./bild1.jpg")) {
+           image.src = "./bild2.jpg";
        }
        else {
-           image.src = "../Bilder/bild1.jpg";
+           image.src = "./bild1.jpg";
        }
    }
 
