@@ -21,7 +21,7 @@ body{
 
 header{
   background-image: url("../Bilder/cityone.jpg");
-  height: 250vh;
+  height: 270vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -220,6 +220,25 @@ header{
   padding-top: 20px;
 }
 
+.container35{                                                                      /*miniräknare*/
+  position: absolute;
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
+  background-color: #500e82;
+  margin-left: 450px;
+  margin-right: 200px;
+  margin-top: 2300px;
+  width: 1280px;
+  height: 110px;
+  padding-left: 35px;
+  padding-top: 20px
+}
+.container35 a{
+  font-size: 35px;
+  color: #fff;
+  padding-top: 10px;
+  font-family: 'gang_of_threeregular', sans-serif;
+}
+
 .containerfour{                                                                      /*tredje lådan (5 spel)*/
   position: absolute;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
@@ -329,6 +348,9 @@ header{
   height: 200px;
   width: 280px;
 }
+
+
+
 
 .spel a, .speltwo a, .spelthree a, .spelfour a, .spelfive a{
   font-size: 30px;
