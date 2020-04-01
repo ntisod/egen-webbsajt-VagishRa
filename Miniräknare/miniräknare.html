@@ -2,9 +2,15 @@
 <html lang=se dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title>intro till javascript</title>
+
     <script src="main.js"></script>
+
     <style>
+
+
+
 
       .title{
       box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
@@ -44,17 +50,17 @@
         border: solid black 7px;
         box-shadow: 0 0 1rem 0 rgba(0,0,0,2);
       }
-      .g{
-        padding-left: 740px;
-        padding-top: 200px;
 
-      }
       body{
         background-color: grey;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
       }
 
-
    </style>
+
   </head>
 
   <body>
@@ -64,11 +70,11 @@
     <table border="1">
        <tr>
           <td colspan="3"><input type="text" id="result"/></td>
-          
+
           <td><input type="button" value="c" onclick="clr()"/> </td>
        </tr>
        <tr>
-          
+
           <td><input type="button" value="1" onclick="dis('1')"/> </td>
           <td><input type="button" value="2" onclick="dis('2')"/> </td>
           <td><input type="button" value="3" onclick="dis('3')"/> </td>
@@ -89,7 +95,6 @@
        <tr>
           <td><input type="button" value="." onclick="dis('.')"/> </td>
           <td><input type="button" value="0" onclick="dis('0')"/> </td>
-          
           <td><input type="button" value="=" onclick="solve()"/> </td>
           <td><input type="button" value="*" onclick="dis('*')"/> </td>
        </tr>
